@@ -30,7 +30,6 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.saveButton = new System.Windows.Forms.Button();
-            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.orderComboBox = new System.Windows.Forms.ComboBox();
             this.addressTextBox = new System.Windows.Forms.TextBox();
             this.quantityTextBox = new System.Windows.Forms.TextBox();
@@ -41,13 +40,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.nameTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.saveButton);
-            this.groupBox1.Controls.Add(this.richTextBox);
             this.groupBox1.Controls.Add(this.orderComboBox);
             this.groupBox1.Controls.Add(this.addressTextBox);
             this.groupBox1.Controls.Add(this.quantityTextBox);
@@ -59,9 +58,9 @@
             this.groupBox1.Controls.Add(this.nameTextBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(74, 42);
+            this.groupBox1.Location = new System.Drawing.Point(46, 31);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(758, 379);
+            this.groupBox1.Size = new System.Drawing.Size(494, 430);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer Information";
@@ -76,14 +75,6 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // richTextBox
-            // 
-            this.richTextBox.Location = new System.Drawing.Point(489, 32);
-            this.richTextBox.Name = "richTextBox";
-            this.richTextBox.Size = new System.Drawing.Size(221, 305);
-            this.richTextBox.TabIndex = 3;
-            this.richTextBox.Text = "";
-            // 
             // orderComboBox
             // 
             this.orderComboBox.FormattingEnabled = true;
@@ -96,7 +87,6 @@
             this.orderComboBox.Name = "orderComboBox";
             this.orderComboBox.Size = new System.Drawing.Size(247, 24);
             this.orderComboBox.TabIndex = 2;
-            
             // 
             // addressTextBox
             // 
@@ -172,12 +162,22 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Customer Name";
             // 
+            // richTextBox
+            // 
+            this.richTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox.Location = new System.Drawing.Point(569, 43);
+            this.richTextBox.Name = "richTextBox";
+            this.richTextBox.Size = new System.Drawing.Size(242, 418);
+            this.richTextBox.TabIndex = 3;
+            this.richTextBox.Text = "";
+            // 
             // CoffeeShop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(895, 473);
+            this.ClientSize = new System.Drawing.Size(858, 473);
             this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.richTextBox);
             this.Name = "CoffeeShop";
             this.Text = "Coffee Shop";
             this.Load += new System.EventHandler(this.CoffeeShop_Load);
