@@ -42,7 +42,9 @@ namespace Day2Assignments
                  price = Convert.ToInt32(quantityTextBox.Text) * 80;
             }
             
-            richTextBox.Text ="\n Customer Name: "+ nameTextBox.Text +"\n\n Contact No: "+ contactNoTextBox.Text+ "\n\n Address: "+addressTextBox.Text +"\n\n Order: " +orderComboBox.Text+"\n\n Quantity: "+quantityTextBox.Text+"\n\n Total Price: "+ price.ToString();
+            richTextBox.Text = "\n Customer Name: "+ nameTextBox.Text +"\n\n Contact No: "+ contactNoTextBox.Text+
+                               "\n\n Address: "+addressTextBox.Text +"\n\n Order: " +orderComboBox.Text+
+                               "\n\n Quantity: "+quantityTextBox.Text+"\n\n Total Price: "+ price.ToString();
 
         }
 
