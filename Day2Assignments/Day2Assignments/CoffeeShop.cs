@@ -25,26 +25,33 @@ namespace Day2Assignments
         private void saveButton_Click(object sender, EventArgs e)
         {
 
+            string name = nameTextBox.Text;
+            string contactNo = contactNoTextBox.Text;
+            string address = addressTextBox.Text;
+            string order = orderComboBox.Text;
+            int quantity = Convert.ToInt32(quantityTextBox.Text);
             int price=0;
-            if(orderComboBox.Text == "Black-120"){
-                 price = Convert.ToInt32(quantityTextBox.Text)*120;
+
+
+            if(order == "Black-120"){
+                 price = quantity*120;
             }
-            else if (orderComboBox.Text == "Cold-100")
+            else if (order == "Cold-100")
             {
-                 price = Convert.ToInt32(quantityTextBox.Text) * 100;
+                price = quantity * 100;
             }
-            else if (orderComboBox.Text == "Hot-90")
+            else if (order == "Hot-90")
             {
-                 price = Convert.ToInt32(quantityTextBox.Text) * 90;
+                price = quantity * 90;
             }
-            else if (orderComboBox.Text == "Regular-80")
+            else if (order == "Regular-80")
             {
-                 price = Convert.ToInt32(quantityTextBox.Text) * 80;
+                price = quantity * 80;
             }
             
-            richTextBox.Text = "\n Customer Name: "+ nameTextBox.Text +"\n\n Contact No: "+ contactNoTextBox.Text+
-                               "\n\n Address: "+addressTextBox.Text +"\n\n Order: " +orderComboBox.Text+
-                               "\n\n Quantity: "+quantityTextBox.Text+"\n\n Total Price: "+ price.ToString();
+            richTextBox.Text = "\n Customer Name: "+ name +"\n\n Contact No: "+ contactNo +
+                               "\n\n Address: "+ address +"\n\n Order: " +order +
+                               "\n\n Quantity: "+ quantity +"\n\n Total Price: "+ price.ToString();
 
         }
 
