@@ -32,7 +32,6 @@ namespace Day2Assignments
             int quantity = Convert.ToInt32(quantityTextBox.Text);
             int price=0;
 
-
             if(order == "Black-120"){
                  price = quantity*120;
             }
